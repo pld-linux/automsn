@@ -1,0 +1,40 @@
+--- automsn-1.1.2/automsn	2006-03-21 21:29:41.000000000 +0200
++++ /tmp/automsn	2006-03-21 21:29:23.000000000 +0200
+@@ -6,6 +6,8 @@
+ use strict;
+ use IO::Socket;
+ 
++$| = 1;
++
+ print <<END;
+ $APP
+ $AUTH
+@@ -14,18 +16,20 @@
+ and sets them up for use in e.g. Kopete.
+ END
+ 
++my $destdir = shift || '';
+ my $ch = '';
+-print "Proceed? [Y/N] ";
+-do {
+-	chomp ($ch = <>);
+-	$ch = lc($ch);
+-} while($ch !~ /^[yn]$/);
++if (-t STDIN) {
++	print "Proceed? [Y/N] ";
++	do {
++		chomp ($ch = <>);
++		$ch = lc($ch);
++	} while($ch !~ /^[yn]$/);
+ 
+-if($ch ne 'y') {
+-	exit;
++	if ($ch ne 'y') {
++		exit;
++	}
+ }
+ 
+-my $destdir = shift || '';
+ my $default = "/share/emoticons/AutoMSN";
+ my $default33 = "/share/apps/kopete/pics/emoticons/AutoMSN";
+ 
