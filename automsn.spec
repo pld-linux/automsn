@@ -3,7 +3,7 @@
 %bcond_with	fetch	# fetch icons and package them
 #
 Summary:	AutoMSN Emoticon Scraper
-Summary(pl.UTF-8):   AutoMSN - narzędzie do wycinania emotikonów
+Summary(pl.UTF-8):	AutoMSN - narzędzie do wycinania emotikonów
 Name:		automsn
 Version:	1.1.2
 Release:	0.1
@@ -36,7 +36,7 @@ ikony i właściwej konfiguracji pliku emoticons.xml.
 
 %package -n kde-emoticons-AutoMSN
 Summary:	MSN emoticons for KDE
-Summary(pl.UTF-8):   Emotikony MSN dla KDE
+Summary(pl.UTF-8):	Emotikony MSN dla KDE
 License:	not distributable
 Group:		Themes
 URL:		http://messenger.msn.com/resource/emoticons.aspx
