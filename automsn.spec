@@ -3,7 +3,7 @@
 %bcond_with	fetch	# fetch icons and package them
 #
 Summary:	AutoMSN Emoticon Scraper
-Summary(pl):	AutoMSN - narzêdzie do wycinania emotikonów
+Summary(pl.UTF-8):   AutoMSN - narzÄ™dzie do wycinania emotikonÃ³w
 Name:		automsn
 Version:	1.1.2
 Release:	0.1
@@ -27,16 +27,16 @@ No icons are included here. This simply automates the process of
 downloading each icon and setting up an appropriate emoticons.xml
 file.
 
-%description -l pl
-Ten skrypt Perla ¶ci±ga emotikony (u¶mieszki) z messenger.msn.com i
+%description -l pl.UTF-8
+Ten skrypt Perla Å›ciÄ…ga emotikony (uÅ›mieszki) z messenger.msn.com i
 ustawia je do wykorzystania np. w Kopete.
 
-Nie zawiera on ikon. Po prostu automatyzuje proces ¶ci±gania ka¿dej
-ikony i w³a¶ciwej konfiguracji pliku emoticons.xml.
+Nie zawiera on ikon. Po prostu automatyzuje proces Å›ciÄ…gania kaÅ¼dej
+ikony i wÅ‚aÅ›ciwej konfiguracji pliku emoticons.xml.
 
 %package -n kde-emoticons-AutoMSN
 Summary:	MSN emoticons for KDE
-Summary(pl):	Emotikony MSN dla KDE
+Summary(pl.UTF-8):   Emotikony MSN dla KDE
 License:	not distributable
 Group:		Themes
 URL:		http://messenger.msn.com/resource/emoticons.aspx
@@ -46,7 +46,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description -n kde-emoticons-AutoMSN
 MSN emoticons for KDE applications.
 
-%description -n kde-emoticons-AutoMSN -l pl
+%description -n kde-emoticons-AutoMSN -l pl.UTF-8
 Emotikony MSN dla aplikacji KDE.
 
 %prep
