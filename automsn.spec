@@ -41,7 +41,6 @@ License:	not distributable
 Group:		Themes
 URL:		http://messenger.msn.com/resource/emoticons.aspx
 Requires:	kdelibs
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description -n kde-emoticons-AutoMSN
 MSN emoticons for KDE applications.
