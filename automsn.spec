@@ -51,7 +51,7 @@ Emotikony MSN dla aplikacji KDE.
 %prep
 %setup -qcT
 install %{SOURCE0} automsn
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %if %{with fetch}
